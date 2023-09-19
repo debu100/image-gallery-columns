@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfolio Img Gallery</title>
+	<style type="text/css">
+		
+		.container{
+			max-width: 960px;
+			margin: 20px auto;
+		}
+
+		.img-container{
+			columns: 3;
+			column-gap: 15px;
+		}
+
+		.img-box{
+			margin-bottom: 15px;
+		}
+
+		img{
+			width: 100%;
+		}
+
+		@media(max-width:992px){
+			.img-container{
+			columns: 2;
+/*			width: calc(100% - 40px);*/
+		}
+		}
+
+				@media(max-width:768px){
+			.img-container{
+			columns: 1;
+/*			width: calc(100% - 40px);*/
+		}
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="img-container">
+			<div class="img-box">
+				<img src="./images./portfolio-1.jpg">
+			</div>
+			<div class="img-box">
+				<img src="./images./portfolio-6.jpg">
+			</div>
+			<div class="img-box">
+				<img src="./images./portfolio-2.jpg">
+			</div>
+			<div class="img-box">
+				<img src="./images./portfolio-5.jpg">
+			</div>
+			<div class="img-box">
+				<img src="./images./portfolio-9.jpg">
+			</div>
+			<div class="img-box">
+				<img src="./images./portfolio-3.jpg">
+			</div>
+			<div class="img-box">
+				<img src="./images./portfolio-4.jpg">
+			</div>
+			<div class="img-box">
+				<img src="./images./portfolio-7.jpg">
+			</div>
+			<div class="img-box">
+				<img src="./images./portfolio-8.jpg">
+			</div>
+		</div>
+	</div>
+	<!-- images direction is from top to bottom not from left to right as like normal case of grid and flexbox -->
+</body>
+</html>
